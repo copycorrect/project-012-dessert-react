@@ -33,7 +33,7 @@ class Recipe extends Component <any, any> {
 
 
 	componentDidMount() {
-		fetch("/data.json")
+		fetch("/project-012-dessert-react/data.json")
 			.then(res => res.json())
 			.then(
 				(result) => {

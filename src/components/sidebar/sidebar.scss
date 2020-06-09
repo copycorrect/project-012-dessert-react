@@ -1,0 +1,43 @@
+.nav-right {
+	position: fixed;
+	right: 2%;
+	top: 30%;
+	z-index: 1;
+	text-align: center;
+	ul {
+		margin: 0;
+		padding: 0;
+		color: gray;
+	}
+	li {
+		list-style: none;
+		padding: 10px;
+		cursor: pointer;
+	}
+	.active-list {
+		font-size: 30px;
+		margin: 40px 0;
+		position: relative;
+		color: #383838;
+		&::after,
+		&::before {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 50%;
+			background-color: gray;
+			width: 2px;
+			height: 35px;
+		}
+		&::after {
+			top: 100%;
+		}
+		&::before {
+			bottom: 100%;
+		}
+	}
+	li.active-list:last-child::after,
+	li.active-list:first-child::before {
+		display: none;
+	}
+}

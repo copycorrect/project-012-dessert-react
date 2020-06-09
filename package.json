@@ -2,7 +2,6 @@
   "name": "project-012-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://copycorrect.github.io/project-012-dessert-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^10.0.4",
